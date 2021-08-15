@@ -2,11 +2,11 @@ package ru.netology.vk;
 
 public class VKPost {
     private int postId;
-//    private int ownerId;
+    private int ownerId;
     private int autorId;
     private int date;
-//    private boolean isPinned;
-//    private Action action;
+    private boolean isPinned;
+    private Action action;
     private Like like;
     private CommentsInfo commentsInfo;
     private Share shareInfo;
@@ -36,13 +36,13 @@ public class VKPost {
         return autorId;
     }
 
-//    public int getOwnerId() {
-//        return ownerId;
-//    }
-//
-//    public void setOwnerId(int ownerId) {
-//        this.ownerId = ownerId;
-//    }
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
 
     public int getDate() {
         return date;
@@ -52,13 +52,13 @@ public class VKPost {
         this.date = date;
     }
 
-//    public boolean isPinned() {
-//        return isPinned;
-//    }
-//
-//    public void setPinned(boolean pinned) {
-//        isPinned = pinned;
-//    }
+    public boolean isPinned() {
+        return isPinned;
+    }
+
+    public void setPinned(boolean pinned) {
+        isPinned = pinned;
+    }
 
     public void setLike(Like like) {
         this.like = like;
